@@ -43,13 +43,35 @@ header {
     top: 0;
     right: 0;
     background: none;
-    margin: 10px;
+    margin: 20px;
+    z-index: 1;
 }
 
 #menuButton line {
     stroke: #f0eee7;
     stroke-width: 4px;
     stroke-linecap: round;
+    transition: all .3s;
+}
+
+#menuButton .line-1-toggled-form {
+    stroke: #92817a;
+    transform:
+        translateX(2px)
+        rotate(31deg)
+        scaleX(112%);
+}
+#menuButton .line-2-toggled-form {
+    transform:
+        scaleX(0%);
+}
+#menuButton .line-3-toggled-form {
+    stroke: #92817a;
+    transform:
+        translateX(-12px)
+        translateY(4px)
+        rotate(-31deg)
+        scaleX(112%);
 }
 
 
@@ -60,15 +82,15 @@ header {
     top: 0;
     height: 100vh;
     width: 100vw;
+    padding: 20px;
+    padding-top: 70px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    
+    gap: 10px;
     
     background-color: #f0eee7;
-    padding: 10px;
-    
     transition: all 0.2s;
 }
 

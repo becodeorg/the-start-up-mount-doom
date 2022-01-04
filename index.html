@@ -29,14 +29,13 @@
 
     <div id="menuButton">
         <svg height="30" width="44">
-            <line x1="2" y1="2" x2="40" y2="2"/>
-            <line x1="2" y1="14" x2="40" y2="14"/>
-            <line x1="2" y1="26" x2="40" y2="26"/>
+            <line id="line-1" x1="2" y1="2" x2="40" y2="2"/>
+            <line id="line-2" x1="2" y1="14" x2="40" y2="14"/>
+            <line id="line-3" x1="2" y1="26" x2="40" y2="26"/>
           </svg>
     </div>
     
     <nav id="nav" class="hidden">
-        <a id="closeMenuButton">X</a>
         <a href="./our-products/index.html">our products</a>
         <a href="./about-us/index.html">about us</a>
     </nav>
@@ -97,17 +96,37 @@
     </footer>
 
     <script>
+        let menuActive = 0;
+
         const menuButtonElem = document.getElementById("menuButton");
-        menuButtonElem.addEventListener("click", openMenu);
-        function openMenu() {
-            document.getElementById("nav").classList.remove("hidden");
+        menuButtonElem.addEventListener("click", toggleMenu);
+
+        function toggleMenu() {
+            if (menuActive === 0) {
+                document.getElementById("nav").classList.remove("hidden");
+                
+                const menuIconLine1 = document.getElementById("line-1");
+                menuIconLine1.classList.add("line-1-toggled-form");
+                const menuIconLine2 = document.getElementById("line-2");
+                menuIconLine2.classList.add("line-2-toggled-form");
+                const menuIconLine3 = document.getElementById("line-3");
+                menuIconLine3.classList.add("line-3-toggled-form");
+                
+                menuActive = 1;
+            } else {
+                document.getElementById("nav").classList.add("hidden");
+                
+                const menuIconLine1 = document.getElementById("line-1");
+                menuIconLine1.classList.remove("line-1-toggled-form");
+                const menuIconLine2 = document.getElementById("line-2");
+                menuIconLine2.classList.remove("line-2-toggled-form");
+                const menuIconLine3 = document.getElementById("line-3");
+                menuIconLine3.classList.remove("line-3-toggled-form");
+
+                menuActive = 0;
+            }
         }
 
-        const closeMenuButtonElem = document.getElementById("closeMenuButton");
-        closeMenuButtonElem.addEventListener("click", closeMenu);
-        function closeMenu() {
-            document.getElementById("nav").classList.add("hidden");
-        }
     </script>
 </body>
 </html>
