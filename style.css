@@ -13,7 +13,7 @@ font-family: 'Quicksand', sans-serif;
     padding: 0;
     box-sizing: border-box;
 
-    /* border: 1px solid lightgray; */
+    border: 1px solid lightgray;
 }
 
 body {
@@ -30,7 +30,6 @@ header {
     height: 100vh;
     background-color: #92817a;
     background-color: #3D2C2E;
-    /* color: #f0eee7; */
     color: #f0eee7;
     display: flex;
     justify-content: center;
@@ -44,15 +43,13 @@ header {
     top: 0;
     right: 0;
     background: none;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     margin: 10px;
 }
 
 #menuButton line {
     stroke: #f0eee7;
     stroke-width: 4px;
+    stroke-linecap: round;
 }
 
 
