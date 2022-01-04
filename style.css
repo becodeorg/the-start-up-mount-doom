@@ -13,7 +13,7 @@ font-family: 'Quicksand', sans-serif;
     padding: 0;
     box-sizing: border-box;
 
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
 }
 
 body {
@@ -83,9 +83,14 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     gap: 20px;
     margin: 40px 0px;
+    text-align: center;
+}
+
+section p,
+section h2 {
+    margin: 0 10px;
 }
 
 .img-container {
@@ -100,11 +105,18 @@ section {
 }
 
 a.button {
-    background-color: #386641;
-    color: #f0eee7;
+    margin: 15px 0;
     padding: 5px 10px;
+
     border-radius: 5px;
+    background-color: #f0eee7;
+    border: 1px solid #92817a80;
+
+    color: #92817A;
     text-transform: uppercase;
+    font-size: 80%;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .border {
