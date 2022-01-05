@@ -1,11 +1,7 @@
 /* https://coolors.co/f4f1de-92817a-386641-3d2c2e */
 
-
 /*
-font-family: 'Kanit', sans-serif;
-font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
-font-family: 'Quicksand', sans-serif;
 */
 
 * {
@@ -24,19 +20,56 @@ h1, h2 {
 }
 
 
+/* PARALLAX */
+
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    perspective: 3px;
+}
+
+.background {
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+    
+    background-position: center center;
+    background-size: cover;
+    transform: translateZ(-2px) scale(2);
+}
+
+.background img {
+    height: 100%;
+}
+
+
 /* HEADER */
 
 header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
     height: 100vh;
-    background-color: #92817a;
-    background-color: #3D2C2E;
-    color: #f0eee7;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 200%;
+    
+    /* background-color: #92817a; */
+    /* background-color: #3D2C2E; */
+    color: #f0eee7;
+    text-shadow: 0 0 5px black;
+    font-size: 180%;
 }
+
+header h1 {
+    transform: translateY(15vh);
+}
+
+
+/* HEADER - MENU ICON */
 
 #menuButton {
     position: absolute;
@@ -110,12 +143,16 @@ header {
 
 /* MAIN */
 
+main {
+    background-color: white;
+}
+
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin: 40px 0px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
