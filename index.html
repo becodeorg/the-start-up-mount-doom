@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <!-- Bootstrap CDN: CSS -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-    
+
     <!-- Bootstrap CDN: JS Bundle with Popper (for collapsing menu) -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -16,12 +17,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 
     <title>[COMPANY NAME]</title>
 </head>
+
 <body>
     <div class="parallax-container">
         <div class="background">
@@ -38,7 +41,7 @@
                 <line id="line-3" x1="2" y1="26" x2="40" y2="26"/>
             </svg>
         </div>
-        
+
         <nav id="nav" class="hidden">
             <a href="./our-products/index.html">our products</a>
             <a href="./about-us/index.html">about us</a>
@@ -52,18 +55,19 @@
                 <a class="button" href="#">CTA / link</a>
                 <div class="border"></div>
             </section>
-            
+
             <section>
                 <div class="img-container">
                     <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/07/OLI_0718-Everyday_OpenOmlette_025096-20385fc.jpg?quality=90&resize=960%2C408" alt="">
                     <!-- <img src="https://skinnyms.com/wp-content/uploads/2012/08/Easy-Stuffed-Mushrooms-Recipe-Side.jpg" alt=""> -->
                 </div>
                 <h2>Dolor Sit Amet</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sed velit deleniti, voluptatibus repellendus repudiandae itaque aspernatur consectetur.<br>Earum perferendis recusandae asperiores aliquam culpa consequuntur doloremque iste ad. Maxime, neque!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sed velit deleniti, voluptatibus repellendus repudiandae itaque aspernatur consectetur.<br>Earum perferendis recusandae asperiores aliquam culpa consequuntur doloremque iste
+                    ad. Maxime, neque!</p>
                 <a class="button" href="#">CTA / link</a>
                 <div class="border"></div>
             </section>
-                    
+
             <section>
                 <div class="img-container">
                     <img src="https://img.jakpost.net/c/2017/10/20/2017_10_20_34435_1508489764._large.jpg" alt="">
@@ -73,7 +77,7 @@
                 <a class="button" href="#">CTA / link</a>
                 <div class="border"></div>
             </section>
-                    
+
             <section>
                 <div class="img-container">
                     <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="">
@@ -81,13 +85,23 @@
                 <h2>Totam Mollitia</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus obcaecati assumenda quas voluptatem, mollitia architecto at cupiditate accusantium corrupti.</p>
                 <a class="button" href="#">CTA / link</a>
+                <div class="border"></div>
             </section>
+
+            <div class="carousel">
+                <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/02/sauteed-mushrooms.jpg" alt="">
+                <img src="https://img.delicious.com.au/YxqpAbn8/del/2020/12/roast-mushrooms-with-charred-onion-143473-2.jpg" alt="">
+                <img src="https://healthyfitnessmeals.com/wp-content/uploads/2020/12/CREAMY-MUSHROOM-SKILLET-6-819x1024.jpg" alt="">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2021/03/Mushroom-Gravy_7-MAIN-SQ.jpg" alt="">
+                <img src="https://skinnyms.com/wp-content/uploads/2012/08/Easy-Stuffed-Mushrooms-Recipe-Side.jpg" alt="">
+            </div>
+
         </main>
 
         <footer>
             <p>[Copyright & contact info]</p>
             <p>Connect with us on</p>
-            
+
             <div class="icons">
                 <img class="icon" src="./images/facebook.png" alt=" icon">
                 <img class="icon" src="./images/instagram.png" alt=" icon">
@@ -97,7 +111,8 @@
             </div>
             <div class="flaticon-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
-    </div> <!-- END OF PARALLAX-CONTAINER -->
+    </div>
+    <!-- END OF PARALLAX-CONTAINER -->
 
 
 
@@ -110,18 +125,18 @@
         function toggleMenu() {
             if (menuActive === 0) {
                 document.getElementById("nav").classList.remove("hidden");
-                
+
                 const menuIconLine1 = document.getElementById("line-1");
                 menuIconLine1.classList.add("line-1-toggled-form");
                 const menuIconLine2 = document.getElementById("line-2");
                 menuIconLine2.classList.add("line-2-toggled-form");
                 const menuIconLine3 = document.getElementById("line-3");
                 menuIconLine3.classList.add("line-3-toggled-form");
-                
+
                 menuActive = 1;
             } else {
                 document.getElementById("nav").classList.add("hidden");
-                
+
                 const menuIconLine1 = document.getElementById("line-1");
                 menuIconLine1.classList.remove("line-1-toggled-form");
                 const menuIconLine2 = document.getElementById("line-2");
@@ -134,4 +149,5 @@
         }
     </script>
 </body>
+
 </html>

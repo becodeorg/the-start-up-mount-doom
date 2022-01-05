@@ -1,7 +1,11 @@
 /* https://coolors.co/f4f1de-92817a-386641-3d2c2e */
 
 /*
+font-family: 'EB Garamond', serif;
+https://fonts.google.com/specimen/EB+Garamond?category=Serif
+
 font-family: 'Open Sans', sans-serif;
+https://fonts.google.com/specimen/Open+Sans
 */
 
 * {
@@ -16,7 +20,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 h1, h2 {
-    font-family:'Times New Roman', Times, serif
+    /* font-family:'Times New Roman', Times, serif */
+    font-family: 'EB Garamond', serif;
 }
 
 
