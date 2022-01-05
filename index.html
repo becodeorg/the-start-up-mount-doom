@@ -6,15 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CDN: CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
-
-    <!-- Bootstrap CDN: JS Bundle with Popper (for collapsing menu) -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,30 +13,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
 
-    <title>Crimini</title>
+    <title>Cremini</title>
 </head>
 
 <body>
+    <div id="menuButton">
+        <svg height="30" width="44">
+            <line id="line-1" x1="2" y1="2" x2="40" y2="2"/>
+            <line id="line-2" x1="2" y1="14" x2="40" y2="14"/>
+            <line id="line-3" x1="2" y1="26" x2="40" y2="26"/>
+        </svg>
+    </div>
+
+    <nav id="nav" class="hidden">
+        <a href="./our-products/index.html">our products</a>
+        <a href="./about-us/index.html">about us</a>
+    </nav>
+
     <div class="parallax-container">
         <div class="background">
             <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/278/278858/mushrooms-in-a-bowel-on-a-dark-table.jpg" alt="" class="background-img">
         </div>
         <header>
-            <h1>CRIMINI</h1>
+            <h1>CREMINI</h1>
         </header>
-
-        <div id="menuButton">
-            <svg height="30" width="44">
-                <line id="line-1" x1="2" y1="2" x2="40" y2="2"/>
-                <line id="line-2" x1="2" y1="14" x2="40" y2="14"/>
-                <line id="line-3" x1="2" y1="26" x2="40" y2="26"/>
-            </svg>
-        </div>
-
-        <nav id="nav" class="hidden">
-            <a href="./our-products/index.html">our products</a>
-            <a href="./about-us/index.html">about us</a>
-        </nav>
 
         <main>
             <section class="first">
@@ -53,8 +44,8 @@
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque sint est. Natus facere reiciendis provident aperiam ut necessitatibus in totam cumque, adipisci ipsam eligendi explicabo voluptate odio, eos et.</p>
                 <a class="button" href="#">CTA / link</a>
-                <div class="border"></div>
             </section>
+            <div class="border"></div>
 
             <section>
                 <div class="img-container">
