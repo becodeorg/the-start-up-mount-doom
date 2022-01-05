@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .main_container {
@@ -19,8 +19,7 @@ body {
 
 .top_bar {
   width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-55.90625%, #386641), color-stop(25.09375%, #f4f1de));
-  background: linear-gradient(90deg, #386641 -55.90625%, #f4f1de 25.09375%);
+  background: linear-gradient(154.46001deg, rgba(255, 255, 255, 0.6) 6.094%, rgba(254, 254, 254, 0.6) 6.094%, rgba(56, 102, 65, 0.500417) 38.16351%, rgba(56, 102, 65, 0.5) 38.16351%);
   height: 8vh;
   position: -webkit-sticky;
   position: sticky;
@@ -34,7 +33,6 @@ body {
   display: flex;
   width: 100vw;
   background-color: white;
-  overflow: scroll;
   color: black;
 }
 
@@ -42,7 +40,7 @@ body {
 .left_bar {
   width: 6vw;
   height: 100vh;
-  background-color: white;
+  background: linear-gradient(154.46001deg, rgba(146, 129, 122, 0.6) 6.094%, rgba(255, 255, 255, 0.500417) 38.16351%, rgba(255, 255, 255, 0.5) 38.16351%);
   border-right: 1px solid black;
   position: fixed;
   z-index: 1;
@@ -81,17 +79,12 @@ body {
 .card_left {
   border-bottom: 1px solid black;
   height: 80vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 50vw;
 }
 
-img {
-  width: 80%;
-  margin: 10vh;
-}
-
-.txtB1 {
+.txtA2,
+.txtB1,
+.txtB2 {
   font-size: 16px;
   font-weight: 300;
   text-align: justify;
@@ -102,5 +95,58 @@ img {
   font-weight: bolder;
   text-align: center;
   margin-bottom: 4vh;
+}
+
+@media only screen and (max-width: 769px) {
+  .AS_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  img {
+    height: 50vh;
+    margin: 5vh;
+  }
+  .left_container {
+    width: 90vw;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .right_container {
+    width: 90vw;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 6vw;
+  }
+  .card_left {
+    height: 100vh;
+    width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .txtA2,
+  .txtB1,
+  .txtB2 {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  img {
+    width: 60%;
+    margin: 12vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
