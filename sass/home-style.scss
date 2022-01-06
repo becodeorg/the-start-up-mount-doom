@@ -116,6 +116,10 @@ img:nth-child(5) {
     .img-container-carousel img {
         height: 100%;
     }
+    
+    .text {
+        flex: 1 0 50vw;
+    }
 
     .tile.reverse {
         flex-direction: row-reverse;
