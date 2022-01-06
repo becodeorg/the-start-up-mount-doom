@@ -35,7 +35,7 @@ body {
   font-weight: bold;
 }
 iframe{
-  margin-left: 6vw ;
+  
   width: 100vw;
 }
 .hidden {
@@ -77,24 +77,24 @@ iframe{
 .left_container {
   display: flex;
   flex-direction: column;
-  margin-left: 6vw;
+  // margin-left: 6vw;
   width: 50vw;
-  border-right: $bordo;
+  // border-right: $bordo;
 }
 
 .right_container {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  border-right: $bordo;
+  // border-right: $bordo;
 }
 
 .card_right {
   height: 80vh;
-  border-bottom: $bordo;
+  // border-bottom: $bordo;
 }
 .card_left {
-  border-bottom: $bordo;
+  // border-bottom: $bordo;
   height: 80vh;
   width: 50vw;
 }
@@ -165,16 +165,16 @@ fieldset{
   .AS_container {
     flex-direction: column;
   }
-  .logos{
-    height: 6vh;
-    align-self: center;
-    margin-left: 6%;
+  // .logos{
+  //   height: 6vh;
+  //   align-self: center;
+  //   margin-left: 6%;
 
-  }
-  #shroom{
-    height: 100%;
+  // }
+  // #shroom{
+  //   height: 100%;
     
-  }
+  // }
 
   .pict1 {
     max-width: 50%;
@@ -215,7 +215,7 @@ fieldset{
   footer {
     background-color: #3D2C2E;
     color: #f0eee7;
-    padding: 30px 10px;
+    // padding: 30px 10px;
     text-align: center;
 
     display: flex;
@@ -223,7 +223,7 @@ fieldset{
     align-items: center;
     gap: 10px;
     width: 100vw;
-    margin-left: 6vw;
+    
 }
 
 footer a {
@@ -248,16 +248,16 @@ footer .icon {
 }
 
 @media only screen and (min-width: 769px) {
-  .logos{
-    height: 6vh;
-    align-self: center;
-    margin-left: 6%;
+  // .logos{
+  //   height: 6vh;
+  //   align-self: center;
+  //   margin-left: 6%;
 
-  }
-  #shroom{
-    height: 100%;
+  // }
+  // #shroom{
+  //   height: 100%;
     
-  }
+  // }
   .pict1 {
     width: 60%;
     // margin: 12vh;
@@ -278,7 +278,7 @@ footer .icon {
     align-items: center;
     gap: 10px;
     width: 100vw;
-    margin-left: 6vw;
+    
 }
 
 footer a {
@@ -299,8 +299,8 @@ footer .icon {
 .flaticon-attribute {
     font-size: 80%;
 }
-.logos{
-  height: 8vh ;
-  width: 10vw;
-}
+// .logos{
+//   height: 8vh ;
+//   width: 10vw;
+// }
 }
