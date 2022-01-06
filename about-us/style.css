@@ -66,6 +66,9 @@ iframe {
   position: sticky;
   top: 0;
   border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .AS_container {
@@ -81,7 +84,6 @@ iframe {
 .left_bar {
   width: 6vw;
   height: 100%;
-  background: linear-gradient(154.46001deg, rgba(146, 129, 122, 0.6) 6.094%, rgba(255, 255, 255, 0.500417) 38.16351%, rgba(255, 255, 255, 0.5) 38.16351%);
   border-right: 1px solid black;
   position: fixed;
   z-index: 1;
@@ -156,7 +158,7 @@ fieldset {
   top: 0;
   right: 0;
   background: none;
-  margin: 20px;
+  margin: 10px;
   z-index: 1;
 }
 
@@ -191,6 +193,16 @@ fieldset {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .logos {
+    height: 6vh;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 6%;
+  }
+  #shroom {
+    height: 100%;
   }
   .pict1 {
     max-width: 50%;
@@ -282,6 +294,16 @@ fieldset {
 }
 
 @media only screen and (min-width: 769px) {
+  .logos {
+    height: 6vh;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 6%;
+  }
+  #shroom {
+    height: 100%;
+  }
   .pict1 {
     width: 60%;
   }
@@ -331,6 +353,10 @@ fieldset {
   }
   .flaticon-attribute {
     font-size: 80%;
+  }
+  .logos {
+    height: 8vh;
+    width: 10vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

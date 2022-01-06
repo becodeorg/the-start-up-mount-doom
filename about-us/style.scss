@@ -54,6 +54,7 @@ iframe{
   position: sticky;
   top: 0;
   border-bottom: $bordo;
+  display: flex;
 }
 
 .AS_container {
@@ -67,12 +68,7 @@ iframe{
 .left_bar {
   width: 6vw;
   height: 100%;
-  background: linear-gradient(
-    154.4600124352861deg,
-    rgba(146, 129, 122, 0.6) 6.093996840442339%,
-    rgba(255, 255, 255, 0.5004166666666666) 38.16350710900473%,
-    rgba(255, 255, 255, 0.5) 38.16350710900473%
-  );
+  
   border-right: $bordo;
   position: fixed;
   z-index: 1;
@@ -135,7 +131,7 @@ fieldset{
   top: 0;
   right: 0;
   background: none;
-  margin: 20px;
+  margin: 10px;
   z-index: 1;
 }
 
@@ -168,6 +164,16 @@ fieldset{
 @media only screen and (max-width: 769px) {
   .AS_container {
     flex-direction: column;
+  }
+  .logos{
+    height: 6vh;
+    align-self: center;
+    margin-left: 6%;
+
+  }
+  #shroom{
+    height: 100%;
+    
   }
 
   .pict1 {
@@ -242,6 +248,16 @@ footer .icon {
 }
 
 @media only screen and (min-width: 769px) {
+  .logos{
+    height: 6vh;
+    align-self: center;
+    margin-left: 6%;
+
+  }
+  #shroom{
+    height: 100%;
+    
+  }
   .pict1 {
     width: 60%;
     // margin: 12vh;
@@ -282,5 +298,9 @@ footer .icon {
 
 .flaticon-attribute {
     font-size: 80%;
+}
+.logos{
+  height: 8vh ;
+  width: 10vw;
 }
 }
