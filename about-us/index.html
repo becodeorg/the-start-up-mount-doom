@@ -5,48 +5,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;1,200&display=swap"
+      rel="stylesheet"
+    />
     <title>About Us</title>
   </head>
 
   <body>
+    <nav id="nav" class="hidden">
+      <a href="./our-products/index.html">our products</a>
+      <a href="./about-us/index.html">about us</a>
+    </nav>
     <div class="main_container">
       <div class="left_bar"></div>
       <!--HEre is the menu bar on top-->
-      <div class="top_bar"></div>
+      <div class="top_bar">
+        <div id="menuButton">
+          <svg height="30" width="44">
+            <line id="line-1" x1="2" y1="2" x2="40" y2="2" />
+            <line id="line-2" x1="2" y1="14" x2="40" y2="14" />
+            <line id="line-3" x1="2" y1="26" x2="40" y2="26" />
+          </svg>
+        </div>
+      </div>
 
       <div class="AS_container">
         <!--left menu bar not moving -->
         <div class="left_container">
           <div class="card_left">
-            <img src="./mushroom-a1.png" alt="mushroomA1" >
+            <img class="pict1" src="./mushroom-a1.png" alt="mushroomA1" />
           </div>
           <div class="card_left">
-          <div class="txtA2"><h5 class="card_title">Name of Company</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque id doloribus inventore at ab quas laborum iure odit sed quisquam aliquam, commodi temporibus maxime, similique omnis quae quaerat quidem sequi quod quos molestiae laboriosam optio! Delectus id rem, minus nobis maxime tempora, quis odio aliquid, quo similique odit eos laborum deserunt exercitationem necessitatibus! Dolore quos, a ab ducimus distinctio hic. Assumenda cum vero veniam aut ipsa dolore quisquam quidem accusamus, aliquid cumque provident delectus nesciunt, placeat fugit minus quas consectetur?</p>
-          </div></div>
-          <div class="card_left"></div>
+            <div class="txtA2">
+              <h5 class="card_title">Name of Company</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+                id doloribus inventore at ab quas laborum iure odit sed quisquam
+                aliquam, commodi temporibus maxime, similique omnis quae quaerat
+                quidem sequi quod quos molestiae laboriosam optio! Delectus id
+                rem, minus nobis maxime tempora, quis odio aliquid, quo
+                similique odit eos laborum deserunt exercitationem
+                necessitatibus! Dolore quos, a ab ducimus distinctio hic.
+                Assumenda cum vero veniam aut ipsa dolore quisquam quidem
+                accusamus, aliquid cumque provident delectus nesciunt, placeat
+                fugit minus quas consectetur?
+              </p>
+            </div>
+          </div>
+          <div class="card_left">
+            <img class="pict1" src="./mushroom-a2.png" alt="mushroomA2">
+          </div>
         </div>
         <div class="right_container">
           <div class="card_right">
-              <div class="txtB1"><h5 class="card_title">Name of Company</h5>
-              <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur veniam velit a. Facere omnis nemo illum cumque, quo harum dolores, nulla hic possimus natus quos aspernatur accusantium rerum pariatur eius! </p>
+            <div class="txtB1">
+              <h5 class="card_title">Name of Company</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Tenetur veniam velit a.
+                Facere omnis nemo illum cumque, quo harum dolores, nulla hic
+                possimus natus quos aspernatur accusantium rerum pariatur eius!
+              </p>
             </div>
-
           </div>
           <div class="card_right">
-            <div class="txtB2"><h5 class="card_title">Name of Company</h5>
-              <p>Lorem ipsum dolor sit amet  Eaque id doloribus inventore at ab quas laborum iure odit sed quisquam aliquam, commodi temporibus maxime, similique omnis quae quaerat quidem sequi quod quos molestiae laboriosam optio! Delectus id rem, minus nobis maxime tempora, quis odio aliquid, quo similique odit eos laborum deserunt exercitationem necessitatibus! Dolore quos, a ab ducimus distinctio hic. Assumenda cum vero veniam aut ipsa dolore quisquam quidem accusamus, aliquid cumque provident delectus nesciunt, placeat fugit minus quas consectetur?</p>
+            <div class="txtB2">
+              <h5 class="card_title">Name of Company</h5>
+              <p>
+                Lorem ipsum dolor sit amet Eaque id doloribus inventore at ab
+                quas laborum iure odit sed quisquam aliquam, commodi temporibus
+                maxime, similique omnis quae quaerat quidem sequi quod quos
+                molestiae laboriosam optio! Delectus id rem, minus nobis maxime
+                tempora, quis odio aliquid, quo similique odit eos laborum
+                deserunt exercitationem necessitatibus! Dolore quos, a ab
+                ducimus distinctio hic. Assumenda cum vero veniam aut ipsa
+                dolore quisquam quidem accusamus, aliquid cumque provident
+                delectus nesciunt, placeat fugit minus quas consectetur?
+              </p>
             </div>
           </div>
-          <div class="card_right">
-            
-        </div>
+          <div>
+            <div class="formulaire">
+            <form
+              id="fs-frm"
+              name="simple-contact-form"
+              accept-charset="utf-8"
+              action="https://formspree.io/f/{form_id}"
+              method="post"
+            >
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Name</label>
+                <br />
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="What's your blaze ? "
+                  required=""
+                />
+                <br />
+                <label for="email-address">Email Address</label>
+                <br />
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email-address"
+                  placeholder="email@mushrooms.sh"
+                  required=""
+                />
+                <br />
+                <label for="message">Message</label>
+                <br />
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here..."
+                  required=""
+                ></textarea>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Submission"
+                />
+                <br>
+                <input type="submit" value="Submit" />
+              </fieldset>
+              
+            </form>
+          </div>
         </div>
       </div>
     </div>
     
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9633.017757930966!2d-110.50482826470174!3d52.87183208001796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53097a7f4696c71b%3A0x4bcc787ca98ce0cc!2sMushroom%20Lake!5e0!3m2!1sfr!2sbe!4v1641393913371!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <footer>
+      <p>[Copyright & contact info]</p>
+      <p>Connect with us on</p>
+
+      <div class="icons">
+        <img class="icon" src="../images/facebook.png" alt=" icon" />
+        <img class="icon" src="../images/instagram.png" alt=" icon" />
+        <img class="icon" src="../images/pinterest.png" alt=" icon" />
+        <img class="icon" src="../images/twitter.png" alt=" icon" />
+        <img class="icon" src="../images/youtube.png" alt=" icon" />
+      </div>
+      <div class="flaticon-attribute">
+        Icons made by
+        <a
+          href="https://www.flaticon.com/authors/pixel-perfect"
+          title="Pixel perfect"
+          >Pixel perfect</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
+      </div>
+    </footer>
+    <script>
+      let menuActive = 0;
+
+      const menuButtonElem = document.getElementById("menuButton");
+      menuButtonElem.addEventListener("click", toggleMenu);
+
+      function toggleMenu() {
+        if (menuActive === 0) {
+          document.getElementById("nav").classList.remove("hidden");
+
+          const menuIconLine1 = document.getElementById("line-1");
+          menuIconLine1.classList.add("line-1-toggled-form");
+          const menuIconLine2 = document.getElementById("line-2");
+          menuIconLine2.classList.add("line-2-toggled-form");
+          const menuIconLine3 = document.getElementById("line-3");
+          menuIconLine3.classList.add("line-3-toggled-form");
+
+          menuActive = 1;
+        } else {
+          document.getElementById("nav").classList.add("hidden");
+
+          const menuIconLine1 = document.getElementById("line-1");
+          menuIconLine1.classList.remove("line-1-toggled-form");
+          const menuIconLine2 = document.getElementById("line-2");
+          menuIconLine2.classList.remove("line-2-toggled-form");
+          const menuIconLine3 = document.getElementById("line-3");
+          menuIconLine3.classList.remove("line-3-toggled-form");
+
+          menuActive = 0;
+        }
+      }
+    </script>
+    
   </body>
+  
 </html>
