@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,500;1,200&display=swap"
       rel="stylesheet"
@@ -16,11 +18,12 @@
 
   <body>
     <nav id="nav" class="hidden">
+      <a href="../index.html">home</a>
       <a href="./our-products/index.html">our products</a>
       <a href="./about-us/index.html">about us</a>
     </nav>
     <div class="main_container">
-      <div class="left_bar"></div>
+      <!-- <div class="left_bar"></div> -->
       <!--HEre is the menu bar on top-->
       <div class="top_bar">
         <div id="menuButton">
@@ -32,31 +35,30 @@
         </div>
       </div>
 
+      <div class="hello-section">
+        <div
+          class="parallax-hello"
+          data-parallax="scroll"
+          data-image-src="./about-us-img.jpg"
+        >
+          <h1>About-us</h1>
+        </div>
+      </div>
+
       <div class="AS_container">
         <!--left menu bar not moving -->
         <div class="left_container">
           <div class="card_left">
-            <img class="pict1" src="./mushroom-a1.png" alt="mushroomA1" />
           </div>
           <div class="card_left">
             <div class="txtA2">
-              <h5 class="card_title">Name of Company</h5>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
-                id doloribus inventore at ab quas laborum iure odit sed quisquam
-                aliquam, commodi temporibus maxime, similique omnis quae quaerat
-                quidem sequi quod quos molestiae laboriosam optio! Delectus id
-                rem, minus nobis maxime tempora, quis odio aliquid, quo
-                similique odit eos laborum deserunt exercitationem
-                necessitatibus! Dolore quos, a ab ducimus distinctio hic.
-                Assumenda cum vero veniam aut ipsa dolore quisquam quidem
-                accusamus, aliquid cumque provident delectus nesciunt, placeat
-                fugit minus quas consectetur?
-              </p>
+              <h5 class="card_title"></h5>
+              <img class="pict1" src="./shitake.jpg" alt="mushroomA1" />
+
             </div>
           </div>
           <div class="card_left">
-            <img class="pict1" src="./mushroom-a2.png" alt="mushroomA2">
+            <img class="pict1" src="" alt="mushroomA2" />
           </div>
         </div>
         <div class="right_container">
@@ -89,60 +91,66 @@
           </div>
           <div>
             <div class="formulaire">
-            <form
-              id="fs-frm"
-              name="simple-contact-form"
-              accept-charset="utf-8"
-              action="https://formspree.io/f/{form_id}"
-              method="post"
-            >
-              <fieldset id="fs-frm-inputs">
-                <label for="full-name">Name</label>
-                <br />
-                <input
-                  type="text"
-                  name="name"
-                  id="full-name"
-                  placeholder="What's your blaze ? "
-                  required=""
-                />
-                <br />
-                <label for="email-address">Email Address</label>
-                <br />
-                <input
-                  type="email"
-                  name="_replyto"
-                  id="email-address"
-                  placeholder="email@mushrooms.sh"
-                  required=""
-                />
-                <br />
-                <label for="message">Message</label>
-                <br />
-                <textarea
-                  rows="5"
-                  name="message"
-                  id="message"
-                  placeholder="Write your message here..."
-                  required=""
-                ></textarea>
-                <input
-                  type="hidden"
-                  name="_subject"
-                  id="email-subject"
-                  value="Contact Form Submission"
-                />
-                <br>
-                <input type="submit" value="Submit" />
-              </fieldset>
-              
-            </form>
+              <form
+                id="fs-frm"
+                name="simple-contact-form"
+                accept-charset="utf-8"
+                action="https://formspree.io/f/{form_id}"
+                method="post"
+              >
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="What's your blaze ? "
+                    required=""
+                  />
+                  <br />
+                  <label for="email-address">Email Address</label>
+                  <br />
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="email-address"
+                    placeholder="email@mushrooms.sh"
+                    required=""
+                  />
+                  <br />
+                  <label for="message">Message</label>
+                  <br />
+                  <textarea
+                    rows="5"
+                    name="message"
+                    id="message"
+                    placeholder="Write your message here..."
+                    required=""
+                  ></textarea>
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    id="email-subject"
+                    value="Contact Form Submission"
+                  />
+                  <br />
+                  <input type="submit" value="Submit" />
+                </fieldset>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9633.017757930966!2d-110.50482826470174!3d52.87183208001796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53097a7f4696c71b%3A0x4bcc787ca98ce0cc!2sMushroom%20Lake!5e0!3m2!1sfr!2sbe!4v1641393913371!5m2!1sfr!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9633.017757930966!2d-110.50482826470174!3d52.87183208001796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53097a7f4696c71b%3A0x4bcc787ca98ce0cc!2sMushroom%20Lake!5e0!3m2!1sfr!2sbe!4v1641393913371!5m2!1sfr!2sbe"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
     </div>
     <footer>
       <p>[Copyright & contact info]</p>
@@ -200,7 +208,5 @@
         }
       }
     </script>
-    
   </body>
-  
 </html>

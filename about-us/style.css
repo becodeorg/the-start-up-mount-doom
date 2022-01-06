@@ -5,28 +5,21 @@
 
 body {
   font-family: "Kanit", sans-serif;
+  background: #f0eee7;
 }
 
 #nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 97vw;
   padding: 20px;
   padding-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   gap: 10px;
   background-color: #f0eee7;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -39,7 +32,6 @@ body {
 }
 
 iframe {
-  margin-left: 6vw;
   width: 100vw;
 }
 
@@ -49,31 +41,23 @@ iframe {
 }
 
 .main_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .top_bar {
   width: 100vw;
-  background: white;
+  background: #f0eee7;
   height: 8vh;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid black;
+  display: flex;
 }
 
 .AS_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  background-color: white;
+  background-color: #f0eee7;
   color: black;
 }
 
@@ -81,44 +65,28 @@ iframe {
 .left_bar {
   width: 6vw;
   height: 100%;
-  background: linear-gradient(154.46001deg, rgba(146, 129, 122, 0.6) 6.094%, rgba(255, 255, 255, 0.500417) 38.16351%, rgba(255, 255, 255, 0.5) 38.16351%);
   border-right: 1px solid black;
   position: fixed;
   z-index: 1;
 }
 
 .left_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 6vw;
+  flex-direction: column;
   width: 50vw;
-  border-right: 1px solid black;
 }
 
 .right_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 50vw;
-  border-right: 1px solid black;
 }
 
 .card_right {
   height: 80vh;
-  border-bottom: 1px solid black;
 }
 
 .card_left {
-  border-bottom: 1px solid black;
   height: 80vh;
   width: 50vw;
 }
@@ -156,181 +124,185 @@ fieldset {
   top: 0;
   right: 0;
   background: none;
-  margin: 20px;
-  z-index: 1;
+  margin: 10px;
+  z-index: 100;
 }
 
 #menuButton line {
   stroke: #92817a;
   stroke-width: 4px;
   stroke-linecap: round;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 #menuButton .line-1-toggled-form {
   stroke: #92817a;
-  -webkit-transform: translateX(2px) rotate(31deg) scaleX(112%);
-          transform: translateX(2px) rotate(31deg) scaleX(112%);
+  transform: translateX(2px) rotate(31deg) scaleX(112%);
 }
 
 #menuButton .line-2-toggled-form {
-  -webkit-transform: scaleX(0%);
-          transform: scaleX(0%);
+  transform: scaleX(0%);
 }
 
 #menuButton .line-3-toggled-form {
   stroke: #92817a;
-  -webkit-transform: translateX(-12px) translateY(4px) rotate(-31deg) scaleX(112%);
-          transform: translateX(-12px) translateY(4px) rotate(-31deg) scaleX(112%);
+  transform: translateX(-12px) translateY(4px) rotate(-31deg) scaleX(112%);
 }
 
-@media only screen and (max-width: 769px) {
+/*if screen equal 769 or smaller :*/
+@media only screen and (max-width: 768px) {
   .AS_container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
+
+  /*This is the style for the parallax on small screens*/
+  /*Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/mushroom-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+  .hello-section {
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    color: #f0eee7;
+  }
+
+  .parallax-hello {
+    min-height: 400px;
+    background: transparent;
+  }
+
   .pict1 {
     max-width: 50%;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    justify-self: center;
+    align-self: center;
   }
+
   .pict1:hover {
     -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
     transform: rotateZ(-30deg);
   }
+
   .left_container {
     width: 90vw;
     height: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .right_container {
     width: 90vw;
     height: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     margin-left: 6vw;
   }
+
   .card_left {
     height: 80vh;
     width: 90vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
+
   .txtA2,
-  .txtB1,
-  .txtB2 {
+.txtB1,
+.txtB2 {
     font-size: 10px;
   }
+
   footer {
     background-color: #3D2C2E;
     color: #f0eee7;
-    padding: 30px 10px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 100vw;
-    margin-left: 6vw;
   }
+
   footer a {
     color: white;
   }
+
   footer .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
+
   footer .icon {
     width: 20px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: invert(1);
   }
+
   .flaticon-attribute {
     font-size: 80%;
   }
 }
-
+/*If screen equal 769 or bigger*/
 @media only screen and (min-width: 769px) {
+  .hello-section {
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    color: #f0eee7;
+    font-size: 6vh;
+  }
+
+  h1 {
+    margin-top: 10vh;
+  }
+
+  .parallax-hello {
+    min-height: 400px;
+    background: transparent;
+  }
+
   .pict1 {
     width: 60%;
   }
+
   .card_left {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
+
   footer {
     background-color: #3D2C2E;
     color: #f0eee7;
     padding: 30px 10px;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 100vw;
-    margin-left: 6vw;
   }
+
   footer a {
     color: white;
   }
+
   footer .icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
+
   footer .icon {
     width: 20px;
-    -webkit-filter: invert(1);
-            filter: invert(1);
+    filter: invert(1);
   }
+
   .flaticon-attribute {
     font-size: 80%;
   }
+
+  iframe {
+    width: 50%;
+    align-self: center;
+  }
 }
+
 /*# sourceMappingURL=style.css.map */
