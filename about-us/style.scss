@@ -7,11 +7,12 @@ $bordo: 1px solid black;
 
 body {
   font-family: "Kanit", sans-serif;
+  background: #f0eee7;
 }
 
 
 #nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 100vh;
   width: 97vw;
@@ -49,18 +50,18 @@ iframe{
 
 .top_bar {
   width: 100vw;
-  background: white;
+  background: #f0eee7;
   height: 8vh;
   position: sticky;
   top: 0;
-  border-bottom: $bordo;
+  // border-bottom: $bordo;
   display: flex;
 }
 
 .AS_container {
   display: flex;
   width: 100vw;
-  background-color: white;
+  background-color: #f0eee7;
   color: black;
 }
 
@@ -132,7 +133,7 @@ fieldset{
   right: 0;
   background: none;
   margin: 10px;
-  z-index: 1;
+  z-index: 100;
 }
 
 #menuButton line {
@@ -161,20 +162,33 @@ fieldset{
       rotate(-31deg)
       scaleX(112%);
 }
-@media only screen and (max-width: 769px) {
+/*if screen equal 769 or smaller :*/
+@media only screen and (max-width: 768px) {
   .AS_container {
     flex-direction: column;
   }
-  // .logos{
-  //   height: 6vh;
-  //   align-self: center;
-  //   margin-left: 6%;
+  /*This is the style for the parallax on small screens*/
+  /*Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/mushroom-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  */
+  .hello-section{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    color: #f0eee7;
+     
+    
 
-  // }
-  // #shroom{
-  //   height: 100%;
+  }
+  .parallax-hello {
+    min-height: 400px;
+    background: transparent;
+}
+  // .hello-text{
+  //   text-align: center;
+  //   color: #f0eee7;
     
   // }
+  
 
   .pict1 {
     max-width: 50%;
@@ -246,18 +260,26 @@ footer .icon {
 }
 
 }
-
+/*If screen equal 769 or bigger*/
 @media only screen and (min-width: 769px) {
-  // .logos{
-  //   height: 6vh;
-  //   align-self: center;
-  //   margin-left: 6%;
-
-  // }
-  // #shroom{
-  //   height: 100%;
+  
+  .hello-section{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+    color: #f0eee7;
+    font-size: 6vh;
+     
     
-  // }
+
+  }
+  h1{
+    margin-top: 10vh;
+  }
+  .parallax-hello {
+    min-height: 400px;
+    background: transparent;
+}
   .pict1 {
     width: 60%;
     // margin: 12vh;
@@ -299,8 +321,10 @@ footer .icon {
 .flaticon-attribute {
     font-size: 80%;
 }
-// .logos{
-//   height: 8vh ;
-//   width: 10vw;
-// }
+
+iframe{
+  width: 50%;
+  align-self: center;
+}
+
 }
