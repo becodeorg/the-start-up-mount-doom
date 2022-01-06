@@ -8,8 +8,16 @@ body {
   background: #f0eee7;
 }
 
+input {
+  padding: 5px;
+}
+
 h1 {
   font-family: "EB Garamond", serif;
+}
+
+label, input, textarea, #label-title {
+  font-family: "Kanit", sans-serif;
 }
 
 #nav {
@@ -33,6 +41,8 @@ h1 {
   text-transform: uppercase;
   color: #92817a;
   font-weight: bold;
+  margin-right: 15px;
+  margin-top: 3px;
 }
 
 iframe {
@@ -87,7 +97,7 @@ iframe {
 }
 
 .card_right {
-  height: 80vh;
+  height: 50vh;
 }
 
 .card_left {
@@ -110,19 +120,24 @@ iframe {
 }
 
 form {
-  width: 100vw;
   margin: 6vw;
 }
 
 fieldset {
   border: none;
+  margin: 0;
 }
 
 #fs-frm-inputs {
-  height: 50vh;
+  height: 300px;
+  margin: 0px;
   color: #386641;
   font-family: lora;
   font-weight: 200;
+}
+
+input {
+  border: none;
 }
 
 #menuButton {
@@ -164,6 +179,10 @@ fieldset {
   /*This is the style for the parallax on small screens*/
   /*Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/mushroom-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   */
+  #hidewhensmall {
+    display: none;
+  }
+
   .hello-section {
     width: 100vw;
     margin: 0 auto;
@@ -172,11 +191,41 @@ fieldset {
   }
 
   .fofo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-top: 25%;
+    margin-bottom: 15%;
   }
 
   textarea {
     width: 250px;
+    border: none;
+    padding: 5px;
+  }
+
+  .contacts-details {
+    height: 100%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 30%;
+  }
+
+  #con-title {
+    padding-bottom: 5%;
+    padding-top: 10%;
+    font-size: 20px;
+    color: #386641;
+  }
+
+  #con-text, #con-address {
+    font-size: 10px;
+    color: #386641;
+  }
+
+  #con-address {
+    margin-bottom: 25%;
   }
 
   .parallax-hello {
@@ -211,23 +260,34 @@ fieldset {
     margin-left: 6vw;
   }
 
-  .card_left {
-    height: 80vh;
+  .card_left, .card_right {
     width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .txtB1,
-.txtB2 {
-    font-size: 10px;
+  .txtB1 {
+    font-size: 20px;
+    padding: 7vw;
+    margin-top: 10%;
+  }
+
+  .form-button {
+    background-color: #386641;
+    border: none;
+    color: #f0eee7;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
   }
 
   footer {
     background-color: #3d2c2e;
     color: #f0eee7;
     text-align: center;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,6 +302,7 @@ fieldset {
   footer .icons {
     display: flex;
     gap: 10px;
+    z-index: 1;
   }
 
   footer .icon {
@@ -283,15 +344,44 @@ fieldset {
     justify-content: center;
   }
 
+  .fofo {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 10%;
+  }
+
+  .contacts-details {
+    margin-left: 10%;
+    margin-top: 25px;
+  }
+
+  #con-title {
+    padding-bottom: 10%;
+    margin-top: 25%;
+    font-size: 20px;
+    color: #386641;
+  }
+
+  #con-text, #con-address {
+    font-size: 12px;
+    color: #386641;
+    font-weight: 200;
+  }
+
   textarea {
     width: 250px;
+    border: none;
+    padding: 7px;
   }
 
   .form-button {
     background-color: #386641;
     border: none;
     color: #f0eee7;
-    padding: 15px 32px;
+    padding: 8px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -302,6 +392,7 @@ fieldset {
     color: #f0eee7;
     padding: 30px 10px;
     text-align: center;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
