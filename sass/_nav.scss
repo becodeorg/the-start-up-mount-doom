@@ -65,6 +65,11 @@
     font-weight: bold;
 }
 
+// adjust color or current page
+#nav a[href="#"] {
+    color: $soil;
+}
+
 .hidden {
     visibility: hidden;
     opacity: 0;
