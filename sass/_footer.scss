@@ -1,0 +1,30 @@
+
+footer {
+    background-color: #3D2C2E;
+    color: #f0eee7;
+    padding: 30px 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .icon {
+    width: 20px;
+    filter: invert(1);
+}
+
+.flaticon-attribute {
+    font-size: 80%;
+}

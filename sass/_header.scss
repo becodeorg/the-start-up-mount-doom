@@ -1,0 +1,48 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: #f0eee7;
+    text-shadow: 0 0 5px black;
+    font-size: 180%;
+}
+
+header h1 {
+    transform: translateY(15vh);
+}
+
+
+// PARALLAX
+
+// prevent image from appearing behind main content
+main {
+    background-color: white;
+}
+
+.parallax-container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    perspective: 3px;
+}
+
+.parallax-background {
+    display: flex; /* to remove whitespace below element */
+    position: relative;
+    z-index: -1;
+    transform: translateZ(-2px) scale(2);
+}
+
+.parallax-background img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: left;
+}

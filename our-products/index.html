@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="../sass/products-style.css">
 
     <title>Products</title>
 </head>
@@ -27,13 +26,13 @@
 
     <nav id="nav" class="hidden">
         <a href="../index.html">home</a>
-        <a href="./our-products/index.html">products</a>
+        <a href="#">products</a>
         <a href="./about-us/index.html">about us</a>
     </nav>
 
     <div class="parallax-container">
-        <div class="background">
-            <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="" class="background-img">
+        <div class="parallax-background">
+            <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="">
         </div>
 
         <header>
@@ -41,7 +40,7 @@
         </header>
 
         <main>
-            <section class="first">
+            <section class="intro">
                 <!-- <div class="img-container"></div> -->
                 <h2>Lorem Ipsum</h2>
                 <div class="carousel">
@@ -87,43 +86,6 @@
                 </div>
             </div>
 
-            <!-- <section>
-                <div class="img-container">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/07/OLI_0718-Everyday_OpenOmlette_025096-20385fc.jpg?quality=90&resize=960%2C408" alt="">
-                </div>
-                <div class="text">
-                    <h2>Dolor Sit Amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sed velit deleniti, voluptatibus repellendus repudiandae itaque aspernatur consectetur.<br>Earum perferendis recusandae asperiores aliquam culpa consequuntur doloremque iste
-                        ad. Maxime, neque!</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-            <div class="border"></div>
-
-            <section class="reverse">
-                <div class="img-container">
-                    <img src="https://img.jakpost.net/c/2017/10/20/2017_10_20_34435_1508489764._large.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h2>Consectetur Adipisicing Elit</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam mollitia optio possimus impedit soluta ab exercitationem hic perspiciatis tenetur sunt quam distinctio veritatis, dolorum ex tempore molestias ad culpa voluptates.</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-            <div class="border"></div>
-
-            <section>
-                <div class="img-container">
-                    <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h2>Totam Mollitia</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus obcaecati assumenda quas voluptatem, mollitia architecto at cupiditate accusantium corrupti.</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-
-            <div class="border"></div> -->
         </main>
 
         <footer>
@@ -139,43 +101,12 @@
             </div>
             <div class="flaticon-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
-    </div>
-    <!-- END OF PARALLAX-CONTAINER -->
+    </div> <!-- END OF PARALLAX-CONTAINER -->
+    
+
+    <script src="../menu-button.js"></script>
 
 
-
-    <script>
-        let menuActive = 0;
-
-        const menuButtonElem = document.getElementById("menuButton");
-        menuButtonElem.addEventListener("click", toggleMenu);
-
-        function toggleMenu() {
-            if (menuActive === 0) {
-                document.getElementById("nav").classList.remove("hidden");
-
-                const menuIconLine1 = document.getElementById("line-1");
-                menuIconLine1.classList.add("line-1-toggled-form");
-                const menuIconLine2 = document.getElementById("line-2");
-                menuIconLine2.classList.add("line-2-toggled-form");
-                const menuIconLine3 = document.getElementById("line-3");
-                menuIconLine3.classList.add("line-3-toggled-form");
-
-                menuActive = 1;
-            } else {
-                document.getElementById("nav").classList.add("hidden");
-
-                const menuIconLine1 = document.getElementById("line-1");
-                menuIconLine1.classList.remove("line-1-toggled-form");
-                const menuIconLine2 = document.getElementById("line-2");
-                menuIconLine2.classList.remove("line-2-toggled-form");
-                const menuIconLine3 = document.getElementById("line-3");
-                menuIconLine3.classList.remove("line-3-toggled-form");
-
-                menuActive = 0;
-            }
-        }
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,293 @@
+/* 
+COLORS
+https://coolors.co/f4f1de-92817a-386641-3d2c2e
+*/
+/*
+FONTS
+
+font-family: 'EB Garamond', serif;
+https://fonts.google.com/specimen/EB+Garamond?category=Serif
+
+font-family: 'Open Sans', sans-serif;
+https://fonts.google.com/specimen/Open+Sans
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid lightgray; */
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2 {
+  font-family: "EB Garamond", serif;
+}
+
+h2 {
+  color: #92817a;
+  font-size: 200%;
+}
+
+main p,
+main h2 {
+  margin: 0 5vw;
+}
+
+a.button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0eee7;
+  border: 1px solid #92817a80;
+  color: #92817A;
+  text-transform: uppercase;
+  font-size: 80%;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.border {
+  border-top: 1px solid gainsboro;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 120%;
+  }
+
+  .intro > * {
+    width: 50vw;
+  }
+}
+#menuButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  margin: 20px;
+  z-index: 100;
+}
+
+#menuButton line {
+  stroke: #f0eee7;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  transition: all 0.3s;
+}
+
+#menuButton .line-1-toggled-form {
+  stroke: #92817a;
+  transform: translateX(2px) rotate(31deg) scaleX(112%);
+}
+
+#menuButton .line-2-toggled-form {
+  transform: scaleX(0%);
+}
+
+#menuButton .line-3-toggled-form {
+  stroke: #92817a;
+  transform: translateX(-12px) translateY(4px) rotate(-31deg) scaleX(112%);
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  background-color: #f0eee7;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+#nav a {
+  text-decoration: none;
+  font-size: 200%;
+  text-transform: uppercase;
+  color: #92817A;
+  font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f0eee7;
+  text-shadow: 0 0 5px black;
+  font-size: 180%;
+}
+
+header h1 {
+  transform: translateY(15vh);
+}
+
+main {
+  background-color: white;
+}
+
+.parallax-container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  perspective: 3px;
+}
+
+.parallax-background {
+  display: flex;
+  /* to remove whitespace below element */
+  position: relative;
+  z-index: -1;
+  transform: translateZ(-2px) scale(2);
+}
+
+.parallax-background img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: left;
+}
+
+footer {
+  background-color: #3D2C2E;
+  color: #f0eee7;
+  padding: 30px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer a {
+  color: white;
+}
+
+footer .icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer .icon {
+  width: 20px;
+  filter: invert(1);
+}
+
+.flaticon-attribute {
+  font-size: 80%;
+}
+
+.parallax-background > img {
+  object-position: right;
+}
+
+/* https://codepen.io/tianyili/pen/qBEdeoy?editors=1100 */
+.carousel {
+  position: relative;
+  height: 100px;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+}
+
+.carousel img {
+  position: absolute;
+  /* top: 0; */
+  height: 100px;
+  opacity: 0;
+  animation: display 20s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 4s;
+}
+
+img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+img:nth-child(4) {
+  animation-delay: 12s;
+}
+
+img:nth-child(5) {
+  animation-delay: 16s;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 40px 0;
+}
+
+.card {
+  width: 300px;
+  max-width: 300px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin: 5vw;
+}
+
+/*# sourceMappingURL=products-style.css.map */

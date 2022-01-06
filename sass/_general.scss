@@ -1,0 +1,87 @@
+
+/* 
+COLORS
+https://coolors.co/f4f1de-92817a-386641-3d2c2e
+*/
+
+/*
+FONTS
+
+font-family: 'EB Garamond', serif;
+https://fonts.google.com/specimen/EB+Garamond?category=Serif
+
+font-family: 'Open Sans', sans-serif;
+https://fonts.google.com/specimen/Open+Sans
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 1px solid lightgray; */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'EB Garamond', serif;
+}
+
+h2 {
+    color: #92817a;
+    font-size: 200%;
+}
+
+// want the images to stretch the whole width, so put margin on the text instead of padding on main
+main p,
+main h2 {
+    margin: 0 5vw;
+}
+
+a.button {
+    margin-top: 15px;
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    background-color: #f0eee7;
+    border: 1px solid #92817a80;
+
+    color: #92817A;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.border {
+    border-top: 1px solid rgb(220, 220, 220);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 120%;
+    }
+
+    .intro > * {
+        width: 50vw;
+    }
+}

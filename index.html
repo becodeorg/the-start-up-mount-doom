@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="./sass/home-style.css">
 
     <title>Cremini</title>
 </head>
@@ -26,13 +25,13 @@
     </div>
 
     <nav id="nav" class="hidden">
-        <a href="../index.html">home</a>
+        <a href="#">home</a>
         <a href="./our-products/index.html">products</a>
         <a href="./about-us/index.html">about us</a>
     </nav>
 
     <div class="parallax-container">
-        <div class="background">
+        <div class="parallax-background">
             <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/278/278858/mushrooms-in-a-bowel-on-a-dark-table.jpg" alt="" class="background-img">
         </div>
         <header>
@@ -40,51 +39,55 @@
         </header>
 
         <main>
-            <section class="first">
+            <div class="intro">
                 <!-- <div class="img-container"></div> -->
                 <h2>Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eaque sint est. Natus facere reiciendis provident aperiam ut necessitatibus in totam cumque, adipisci ipsam eligendi explicabo voluptate odio, eos et.</p>
-                <a class="button" href="#">CTA / link</a>
-            </section>
+                <!-- <a class="button" href="#">CTA / link</a> -->
+            </div>
             <div class="border"></div>
 
-            <section>
-                <div class="img-container">
-                    <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/07/OLI_0718-Everyday_OpenOmlette_025096-20385fc.jpg?quality=90&resize=960%2C408" alt="">
+            <div class="tiles-container">
+                
+                <div class="tile">
+                    <div class="img-container">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/07/OLI_0718-Everyday_OpenOmlette_025096-20385fc.jpg?quality=90&resize=960%2C408" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Dolor Sit Amet</h2>
+                        <p>Voluptatibus repellendus repudiandae itaque aspernatur consectetur.<br>Earum perferendis recusandae asperiores aliquam culpa consequuntur doloremque iste ad. Maxime, neque!</p>
+                        <a class="button" href="#">CTA / link</a>
+                    </div>
                 </div>
-                <div class="text">
-                    <h2>Dolor Sit Amet</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas sed velit deleniti, voluptatibus repellendus repudiandae itaque aspernatur consectetur.<br>Earum perferendis recusandae asperiores aliquam culpa consequuntur doloremque iste
-                        ad. Maxime, neque!</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-            <div class="border"></div>
+                <div class="border"></div>
 
-            <section class="reverse">
-                <div class="img-container">
-                    <img src="https://img.jakpost.net/c/2017/10/20/2017_10_20_34435_1508489764._large.jpg" alt="">
+                <div class="tile reverse">
+                    <div class="img-container">
+                        <img src="https://img.jakpost.net/c/2017/10/20/2017_10_20_34435_1508489764._large.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Consectetur Adipisicing Elit</h2>
+                        <p>Exercitationem hic perspiciatis tenetur sunt quam distinctio veritatis, dolorum ex tempore molestias ad culpa voluptates.</p>
+                        <a class="button" href="#">CTA / link</a>
+                    </div>
                 </div>
-                <div class="text">
-                    <h2>Consectetur Adipisicing Elit</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam mollitia optio possimus impedit soluta ab exercitationem hic perspiciatis tenetur sunt quam distinctio veritatis, dolorum ex tempore molestias ad culpa voluptates.</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-            <div class="border"></div>
+                <div class="border"></div>
 
-            <section>
-                <div class="img-container">
-                    <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="">
+                <div class="tile">
+                    <div class="img-container">
+                        <img src="https://medlav.com.my/wp-content/uploads/2021/08/oyster-mushroom-1296x728-header.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Totam Mollitia</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus obcaecati assumenda quas voluptatem, mollitia architecto at cupiditate accusantium corrupti.</p>
+                        <a class="button" href="#">CTA / link</a>
+                    </div>
                 </div>
-                <div class="text">
-                    <h2>Totam Mollitia</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ducimus obcaecati assumenda quas voluptatem, mollitia architecto at cupiditate accusantium corrupti.</p>
-                    <a class="button" href="#">CTA / link</a>
-                </div>
-            </section>
-            <div class="border"></div>
+                
+            </div> <!-- END OF TILES-CONTAINER -->
 
+            <div class="border"></div>
+            
             <div class="carousel">
                 <img src="https://cdn.loveandlemons.com/wp-content/uploads/2020/02/sauteed-mushrooms.jpg" alt="">
                 <img src="https://img.delicious.com.au/YxqpAbn8/del/2020/12/roast-mushrooms-with-charred-onion-143473-2.jpg" alt="">
@@ -108,43 +111,12 @@
             </div>
             <div class="flaticon-attribute">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
-    </div>
-    <!-- END OF PARALLAX-CONTAINER -->
+    </div> <!-- END OF PARALLAX-CONTAINER -->
+    
+
+    <script src="../menu-button.js"></script>
 
 
-
-    <script>
-        let menuActive = 0;
-
-        const menuButtonElem = document.getElementById("menuButton");
-        menuButtonElem.addEventListener("click", toggleMenu);
-
-        function toggleMenu() {
-            if (menuActive === 0) {
-                document.getElementById("nav").classList.remove("hidden");
-
-                const menuIconLine1 = document.getElementById("line-1");
-                menuIconLine1.classList.add("line-1-toggled-form");
-                const menuIconLine2 = document.getElementById("line-2");
-                menuIconLine2.classList.add("line-2-toggled-form");
-                const menuIconLine3 = document.getElementById("line-3");
-                menuIconLine3.classList.add("line-3-toggled-form");
-
-                menuActive = 1;
-            } else {
-                document.getElementById("nav").classList.add("hidden");
-
-                const menuIconLine1 = document.getElementById("line-1");
-                menuIconLine1.classList.remove("line-1-toggled-form");
-                const menuIconLine2 = document.getElementById("line-2");
-                menuIconLine2.classList.remove("line-2-toggled-form");
-                const menuIconLine3 = document.getElementById("line-3");
-                menuIconLine3.classList.remove("line-3-toggled-form");
-
-                menuActive = 0;
-            }
-        }
-    </script>
 </body>
 
 </html>

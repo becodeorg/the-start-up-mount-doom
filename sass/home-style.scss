@@ -1,0 +1,123 @@
+@import "./general";
+@import "./nav";
+@import "./header";
+@import "./footer";
+// @import "./home-sections";
+// @import "./carousel";
+
+
+// TILES
+
+.tiles-container {
+    margin: 10vh 0;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+}
+
+.img-container img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .tile {
+        margin: 0px;
+        flex-direction: row;
+    }
+
+    .img-container img {
+        height: 400px;
+        width: 50vw;
+    }
+
+    .tile.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .tiles-container .border {
+        border: none;
+    }
+}
+
+
+// CAROUSEL
+
+/* https://codepen.io/tianyili/pen/qBEdeoy?editors=1100 */
+
+.carousel {
+    margin-top: 40px;
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 200px;
+    object-position: center center;
+    object-fit: cover;
+
+    opacity: 0;
+    animation: display 20s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 4s;
+}
+
+img:nth-child(3) {
+    animation-delay: 8s;
+}
+
+img:nth-child(4) {
+    animation-delay: 12s;
+}
+
+img:nth-child(5) {
+    animation-delay: 16s;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(100vw);
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
