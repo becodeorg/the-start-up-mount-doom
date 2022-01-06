@@ -1,8 +1,10 @@
-
 /* 
 COLORS
 https://coolors.co/f4f1de-92817a-386641-3d2c2e
 */
+$mushroom-light: #f0eee7;
+$mushroom-dark: #92817a;
+$soil: #3D2C2E;
 
 /*
 FONTS
@@ -31,7 +33,7 @@ h1, h2 {
 }
 
 h2 {
-    color: #92817a;
+    color: $mushroom-dark;
     font-size: 200%;
 }
 
@@ -46,10 +48,10 @@ a.button {
     padding: 5px 10px;
 
     border-radius: 5px;
-    background-color: #f0eee7;
+    background-color: $mushroom-light;
     border: 1px solid #92817a80;
 
-    color: #92817A;
+    color: $mushroom-dark;
     text-transform: uppercase;
     font-size: 80%;
     font-weight: bold;

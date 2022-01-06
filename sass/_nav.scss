@@ -10,14 +10,14 @@
 }
 
 #menuButton line {
-    stroke: #f0eee7;
+    stroke: $mushroom-light;
     stroke-width: 4px;
     stroke-linecap: round;
     transition: all .3s;
 }
 
 #menuButton .line-1-toggled-form {
-    stroke: #92817a;
+    stroke: $mushroom-dark;
     transform:
         translateX(2px)
         rotate(31deg)
@@ -28,7 +28,7 @@
         scaleX(0%);
 }
 #menuButton .line-3-toggled-form {
-    stroke: #92817a;
+    stroke: $mushroom-dark;
     transform:
         translateX(-12px)
         translateY(4px)
@@ -52,7 +52,7 @@
     align-items: flex-end;
     gap: 10px;
     
-    background-color: #f0eee7;
+    background-color: $mushroom-light;
     transition: all 0.2s;
     z-index: 1;
 }
@@ -61,7 +61,7 @@
     text-decoration: none;
     font-size: 200%;
     text-transform: uppercase;
-    color: #92817A;
+    color: $mushroom-dark;
     font-weight: bold;
 }
 
