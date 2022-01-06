@@ -15,7 +15,6 @@ https://fonts.google.com/specimen/Open+Sans
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid lightgray; */
 }
 
 body {
@@ -130,6 +129,10 @@ a.button {
   text-transform: uppercase;
   color: #92817a;
   font-weight: bold;
+}
+
+#nav a[href="#"] {
+  color: #3D2C2E;
 }
 
 .hidden {
