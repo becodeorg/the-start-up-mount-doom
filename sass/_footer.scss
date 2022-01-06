@@ -1,7 +1,7 @@
 footer {
     background-color: $soil;
     color: $mushroom-light;
-    padding: 30px 10px;
+    padding: 5vh 2vw 10vh 2vw; // extra padding on bottom due to scroll issues (in chrome) on (android) phones
     text-align: center;
 
     display: flex;
@@ -26,4 +26,10 @@ footer .icon {
 
 .flaticon-attribute {
     font-size: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        padding-bottom: 5vh;
+    }
 }
