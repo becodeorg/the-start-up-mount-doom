@@ -61,11 +61,11 @@ a.button {
   justify-content: center;
   gap: 20px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 10vh;
 }
 
 .intro h2 {
-  margin-top: 40px;
+  margin-top: 10vh;
 }
 
 @media only screen and (min-width: 768px) {
@@ -187,7 +187,7 @@ main {
 footer {
   background-color: #3D2C2E;
   color: #f0eee7;
-  padding: 30px 10px;
+  padding: 5vh 2vw 10vh 2vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -213,6 +213,11 @@ footer .icon {
   font-size: 80%;
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    padding-bottom: 5vh;
+  }
+}
 .tiles-container {
   margin: 10vh 0;
 }
@@ -316,6 +321,10 @@ img:nth-child(5) {
 
   .img-container-carousel img {
     height: 100%;
+  }
+
+  .text {
+    flex: 1 0 50vw;
   }
 
   .tile.reverse {
