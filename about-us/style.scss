@@ -1,5 +1,5 @@
 $bordo: 1px solid black;
-
+$backie: #f0eee7;
 * {
   padding: 0;
   margin: 0;
@@ -7,12 +7,20 @@ $bordo: 1px solid black;
 
 body {
   font-family: "Kanit", sans-serif;
-  background: #f0eee7;
+  background: $backie;
+}
+input {
+  padding: 5px;
 }
 
-h1{
-  font-family: 'EB Garamond', serif;
+h1 {
+  font-family: "EB Garamond", serif;
 }
+label,input,textarea, #label-title{
+  font-family: "Kanit", sans-serif;
+
+}
+
 
 #nav {
   position: fixed;
@@ -27,8 +35,9 @@ h1{
   align-items: flex-end;
   gap: 10px;
 
-  background-color: #f0eee7;
+  background-color: $backie;
   transition: all 0.2s;
+  
 }
 
 #nav a {
@@ -37,6 +46,8 @@ h1{
   text-transform: uppercase;
   color: #92817a;
   font-weight: bold;
+  margin-right: 15px;
+  margin-top: 3px;
 }
 iframe {
   width: 100vw;
@@ -52,7 +63,7 @@ iframe {
 
 .top_bar {
   width: 100vw;
-  background: #f0eee7;
+  background: $backie;
   height: 8vh;
   position: sticky;
   top: 0;
@@ -63,7 +74,7 @@ iframe {
 .AS_container {
   display: flex;
   width: 100vw;
-  background-color: #f0eee7;
+  background-color: $backie;
   color: black;
 }
 
@@ -93,7 +104,7 @@ iframe {
 }
 
 .card_right {
-  height: 80vh;
+  height: 50vh;
   // border-bottom: $bordo;
 }
 .card_left {
@@ -117,18 +128,23 @@ iframe {
 }
 
 form {
-  width: 100vw;
   margin: 6vw;
+  
+
 }
 fieldset {
   border: none;
+  margin: 0;
 }
 #fs-frm-inputs {
-  height: 50vh;
+  height: 300px;
+  margin: 0px;
   color: #386641;
   font-family: lora;
   font-weight: 200;
-  
+}
+input {
+  border: none;
 }
 
 #menuButton {
@@ -166,19 +182,48 @@ fieldset {
   /*This is the style for the parallax on small screens*/
   /*Photo by <a href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/mushroom-farm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   */
+  #hidewhensmall{
+    display: none;
+  }
   .hello-section {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
-    color: #f0eee7;
-    
+    color: $backie;
   }
-  .fofo{
+  .fofo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-top: 25%;
+    margin-bottom:15% ;
   }
-  textarea{
+  textarea {
     width: 250px;
+    border: none;
+    padding: 5px;
   }
+  .contacts-details {
+    height: 100%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 30%;
+
+  }
+  #con-title {
+    padding-bottom: 5%;
+    padding-top: 10%;
+    font-size: 20px ;
+    color:#386641;
+  }
+  #con-text, #con-address{
+    font-size: 10px;
+    color:#386641;
+  }
+  #con-address{ margin-bottom: 25%;
+  }
+  
 
   .parallax-hello {
     min-height: 400px;
@@ -189,21 +234,18 @@ fieldset {
   }
   // .hello-text{
   //   text-align: center;
-  //   color: #f0eee7;
+  //   color: $backie;
 
   // }
 
   .pict1 {
     max-width: 80%;
     padding-left: 10%;
-  
   }
-  #fs-frm-inputs{
+  #fs-frm-inputs {
     font-weight: 200;
-    
-    
   }
-  
+
   .left_container {
     width: 90vw;
     height: 100%;
@@ -217,23 +259,34 @@ fieldset {
     align-items: center;
     margin-left: 6vw;
   }
-  .card_left {
-    height: 80vh;
+  .card_left, .card_right {
+    // height: 60vh;
     width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .txtB1,
-  .txtB2 {
-    font-size: 10px;
+  .txtB1{
+    font-size: 20px;
+    padding: 7vw;
+    margin-top: 10%;
+  }
+  .form-button {
+    background-color: #386641;
+    border: none;
+    color: $backie;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
   }
   footer {
     background-color: #3d2c2e;
-    color: #f0eee7;
+    color: $backie;
     // padding: 30px 10px;
     text-align: center;
+    margin-top: 25px;
 
     display: flex;
     flex-direction: column;
@@ -249,6 +302,8 @@ fieldset {
   footer .icons {
     display: flex;
     gap: 10px;
+    z-index: 1;
+
   }
 
   footer .icon {
@@ -266,7 +321,7 @@ fieldset {
     width: 100vw;
     margin: 0 auto;
     text-align: center;
-    color: #f0eee7;
+    color: $backie;
     font-size: 6vh;
   }
 
@@ -281,31 +336,60 @@ fieldset {
     width: 60%;
     justify-self: center;
     align-self: center;
-    
   }
-  
+
   .card_left {
     display: flex;
     align-items: center;
     justify-content: center;
+    // height: 50vh;
   }
-  textarea{
+  .fofo {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 10%;
+  }
+
+  .contacts-details{
+    margin-left: 10%;
+    margin-top: 25px;
+  }
+
+  #con-title {
+    padding-bottom: 10%;
+    margin-top: 25%;
+    font-size: 20px ;
+    color:#386641;
+  }
+  #con-text, #con-address{
+    font-size: 12px;
+    color:#386641;
+    font-weight: 200;
+  }
+  textarea {
     width: 250px;
+    border: none;
+    padding: 7px;
   }
-  .form-button{
+  .form-button {
     background-color: #386641;
     border: none;
-    color:#f0eee7;
-    padding: 15px 32px;
+    color: $backie;
+    padding: 8px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
+    // padding-bottom: 15px;
   }
   footer {
     background-color: #3d2c2e;
-    color: #f0eee7;
+    color: $backie;
     padding: 30px 10px;
     text-align: center;
+    margin-top: 25px;
 
     display: flex;
     flex-direction: column;
@@ -335,6 +419,5 @@ fieldset {
   iframe {
     width: 50%;
     align-self: center;
-    
   }
 }
