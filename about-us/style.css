@@ -45,10 +45,6 @@ label, input, textarea, #label-title {
   margin-top: 3px;
 }
 
-iframe {
-  width: 100vw;
-}
-
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -101,7 +97,6 @@ iframe {
 }
 
 .card_left {
-  height: 80vh;
   width: 50vw;
 }
 
@@ -226,6 +221,10 @@ input {
 
   #con-address {
     margin-bottom: 25%;
+  }
+
+  iframe {
+    width: 100vw;
   }
 
   .parallax-hello {

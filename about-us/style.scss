@@ -1,4 +1,3 @@
-$bordo: 1px solid black;
 $backie: #f0eee7;
 * {
   padding: 0;
@@ -49,9 +48,7 @@ label,input,textarea, #label-title{
   margin-right: 15px;
   margin-top: 3px;
 }
-iframe {
-  width: 100vw;
-}
+
 .hidden {
   visibility: hidden;
   opacity: 0;
@@ -67,7 +64,6 @@ iframe {
   height: 8vh;
   position: sticky;
   top: 0;
-  // border-bottom: $bordo;
   display: flex;
 }
 
@@ -83,7 +79,7 @@ iframe {
   width: 6vw;
   height: 100%;
 
-  border-right: $bordo;
+  border-right: 1px solid black;
   position: fixed;
   z-index: 1;
 }
@@ -93,23 +89,19 @@ iframe {
   flex-direction: column;
   // margin-left: 6vw;
   width: 50vw;
-  // border-right: $bordo;
 }
 
 .right_container {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  // border-right: $bordo;
 }
 
 .card_right {
   height: 50vh;
-  // border-bottom: $bordo;
 }
 .card_left {
-  // border-bottom: $bordo;
-  height: 80vh;
+  // height: 80vh;
   width: 50vw;
 }
 
@@ -222,6 +214,9 @@ input {
     color:#386641;
   }
   #con-address{ margin-bottom: 25%;
+  }
+  iframe {
+    width: 100vw;
   }
   
 
