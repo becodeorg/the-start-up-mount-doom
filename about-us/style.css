@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #f0eee7;
 }
 
@@ -17,7 +17,7 @@ h1 {
 }
 
 label, input, textarea, #label-title {
-  font-family: "Kanit", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #nav {
