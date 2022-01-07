@@ -5,8 +5,11 @@ $backie: #f0eee7;
 }
 
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: $backie;
+}
+label,input,textarea{
+  border-radius: 5%;
 }
 input {
   padding: 5px;
@@ -16,7 +19,7 @@ h1 {
   font-family: "EB Garamond", serif;
 }
 label,input,textarea, #label-title{
-  font-family: "Kanit", sans-serif;
+ font-family: 'Open Sans', sans-serif;
 
 }
 
