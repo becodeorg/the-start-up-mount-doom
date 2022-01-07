@@ -8,6 +8,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: $backie;
 }
+label,input,textarea{
+  border-radius: 5%;
+}
 input {
   padding: 5px;
 }
